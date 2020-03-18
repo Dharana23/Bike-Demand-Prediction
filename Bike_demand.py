@@ -5,7 +5,7 @@ import math
 from sklearn.linear_model import LinearRegression
 from sklearn.metrics import mean_squared_error
 
-bikes = pd.read_csv('C:/Users/kain_/Downloads/Course Files/006 - Kaggle Project/hour.csv')
+bikes = pd.read_csv('hour.csv')
 bikes_prep = bikes.copy()
 bikes_prep = bikes_prep.drop(['index', 'date', 'casual', 'registered'], axis=1)
 print(bikes_prep.isnull().sum())
